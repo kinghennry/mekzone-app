@@ -1,0 +1,66 @@
+.ag-masonary-wrapper {
+  padding: 50px 0;
+  position: relative;
+}
+.ml {
+  margin-left: 0;
+  padding: 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0 30px;
+}
+
+.list {
+  height: 1300px;
+}
+.masonry-grid {
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* background-color: red; */
+}
+
+.messonry-button button {
+  border: 0;
+  background: transparent;
+  padding: 6px;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #748494;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 4rem;
+}
+.mb {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .sm-font {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    justify-content: unset;
+    align-items: unset;
+    flex-direction: column;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 567px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

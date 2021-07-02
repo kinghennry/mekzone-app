@@ -1,0 +1,115 @@
+.about__section {
+  padding: 100px 0px;
+}
+.about__sectionRow {
+  position: relative;
+}
+.about__imageArea {
+  flex: 0.5;
+  z-index: 9;
+}
+
+.four {
+  transform: translateY(-10%);
+  z-index: 999;
+  margin-left: -100px;
+}
+.about__image img {
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0.25rem 0.5rem,
+    rgba(0, 0, 0, 0.1) 0px 1.5rem 2.2rem;
+  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1) 0s;
+}
+.about__contentArea {
+  flex: 0.5;
+  padding-left: 80px;
+  margin-right: 70px;
+}
+.about__contentArea .span__title {
+  position: relative;
+  padding: 0 0 0 80px;
+}
+.about__link {
+  background: rgb(18, 146, 238);
+  border: 0;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.about__contentArea h3 {
+  margin: 20px 0;
+}
+
+.about__contentArea .span__title::before {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: rgb(18, 146, 238);
+  left: 0px;
+  bottom: 0px;
+}
+@media (max-width: 1024px) {
+  .about__contentArea .span__title {
+    padding: 0 0 0 60px;
+  }
+  .about__contentArea .span__title::before {
+    width: 50px;
+    top: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .about__contentArea {
+    padding: 0;
+  }
+  .about__contentArea .span__title {
+    padding: 0px 0 0 50px;
+  }
+
+  .about__sectionRow {
+    flex-direction: column;
+  }
+
+  .about__contentArea {
+    margin: 50px 0px 0px 0px;
+    margin-right: 120px;
+  }
+
+  .about__contentArea .span__title::before {
+    width: 40px;
+    top: 13px;
+  }
+  .about__link {
+    padding: 10px 20px;
+  }
+
+  .about__contentArea h3 {
+    font-size: 22px;
+  }
+  .about__contentArea p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 567px) {
+  .about__contentArea .span__title::before {
+    width: 35px;
+    top: 13px;
+  }
+
+  .about__link {
+    padding: 10px 25px;
+  }
+
+  .about__contentArea p {
+    font-size: 16px;
+  }
+  .about__contentArea {
+    margin-right: 0px;
+  }
+  .about__contentArea h3 {
+    line-height: 1.5;
+  }
+}

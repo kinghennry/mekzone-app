@@ -1,0 +1,8 @@
+.testemonials {
+  padding: 30px 0 70px;
+  background: rgb(248, 250, 255);
+}
+.testemonials .slick-dots li button::before {
+  font-size: 12px;
+  color: #030f27;
+}

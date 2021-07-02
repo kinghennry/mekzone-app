@@ -1,0 +1,57 @@
+.contact__info .icon svg {
+  width: 50px;
+  color: blue;
+}
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.contact__info {
+  align-items: flex-start;
+  padding: 45px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 40px rgb(51 51 51 / 10%);
+  margin-bottom: 70px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+.contact__title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.icon {
+  margin-right: 15px;
+}
+.contact__info .icon svg path {
+  stroke: #1292ee;
+}
+/* media queries */
+@media only screen and (max-width: 768px) {
+  .contact__infoDetails > h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .contact__info {
+    padding: 45px 20px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 567px) {
+  .section-title .sub-title {
+    font-size: 20px;
+  }
+  .contact__info {
+    padding: 45px 20px;
+  }
+  .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

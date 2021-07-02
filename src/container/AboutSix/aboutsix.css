@@ -1,0 +1,116 @@
+/* progress styles start */
+.progress__charts {
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin-right: 70px;
+  position: relative;
+}
+.progress__charts .heading {
+  font-size: 16px;
+  line-height: 23px;
+  color: rgb(3, 15, 39);
+  font-weight: 400;
+}
+.progress__charts .progress {
+  height: 4px;
+  font-size: 14px;
+  background-color: rgb(116, 132, 148);
+  overflow: visible;
+  border-radius: 0px;
+  font-size: 0.75rem;
+  margin-top: 10px;
+  position: relative;
+}
+
+.gradient-1 {
+  color: rgb(97, 253, 237);
+  background-color: rgb(13, 138, 188);
+  background-image: linear-gradient(
+    -224deg,
+    rgb(13, 138, 188),
+    rgb(97, 253, 237)
+  );
+  overflow: visible;
+  position: relative;
+}
+
+.gradient-2 {
+  color: rgb(238, 206, 144);
+  background-color: rgb(212, 85, 41);
+  background-image: linear-gradient(
+    -224deg,
+    rgb(212, 85, 41),
+    rgb(238, 206, 144)
+  );
+  position: relative;
+  overflow: visible;
+}
+.single-progress {
+  position: relative;
+}
+.gradient-3 {
+  position: relative;
+  color: rgb(92, 81, 255);
+  background-color: rgb(246, 70, 169);
+  background-image: linear-gradient(
+    -224deg,
+    rgb(246, 70, 169),
+    rgb(92, 81, 255)
+  );
+  position: relative;
+  overflow: visible;
+}
+.gradient-4 {
+  color: rgb(229, 82, 154);
+  background-color: rgb(231, 118, 84);
+  background-image: linear-gradient(
+    -224deg,
+    rgb(231, 118, 84),
+    rgb(229, 82, 154)
+  );
+  position: relative;
+  overflow: visible;
+}
+.percent__label {
+  position: relative;
+  left: 445px;
+  font-size: 12px;
+  font-weight: 700;
+  top: -26px;
+  color: rgb(46, 50, 128);
+  line-height: 2;
+}
+
+@media (max-width: 1024px) {
+  .percent__label {
+    position: relative;
+    left: 285px;
+  }
+}
+@media (max-width: 768px) {
+  .percent__label {
+    position: relative;
+    left: 485px;
+  }
+  .progress__charts {
+    margin-right: 0px;
+  }
+
+  .about__contentArea h3 {
+    font-size: 22px;
+  }
+  .about__contentArea p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 567px) {
+  .percent__label {
+    left: 305px;
+  }
+}
+@media (max-width: 320px) {
+  .percent__label {
+    left: 225px;
+  }
+}

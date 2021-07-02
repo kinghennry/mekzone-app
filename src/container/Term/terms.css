@@ -1,0 +1,48 @@
+.terms {
+  padding: 30px 0;
+  line-height: 2.3;
+}
+.terms:hover {
+  color: unset;
+}
+.terms__title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #030f27;
+}
+.terms__text {
+  font-size: 20px;
+  padding: 10px 0px 0px;
+}
+.terms__desc {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px 0 14px;
+}
+.option {
+  font-size: 26px;
+}
+.terms__list li {
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+.terms__details {
+  line-height: 2.3;
+  display: block;
+  margin-top: 10px;
+}
+.privacy__link{
+  margin:0 3px;
+  color: #030f27;
+  font-weight:700;
+}
+.term__header{
+  font-weight:300;
+  margin-top: 10px;
+}
+.contact__infoDetails > p {
+  font-size: 20px;
+  max-width: 530px;
+  margin: 20px auto;
+  color: #8c89a2;
+}

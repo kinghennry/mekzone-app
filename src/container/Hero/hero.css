@@ -1,0 +1,91 @@
+.intro {
+  background: url("../../images/hero-image/hero-4.jpg") 50% center no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+}
+.intro::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 15, 39, 0.7) 0px,
+    rgba(3, 15, 39, 0)
+  );
+}
+
+.intro__title {
+  font-size: 56px;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+  margin: 20px 0;
+  padding: 70px 20px 0;
+  max-width: 900px;
+}
+.desc p {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.67;
+  color: rgb(255, 255, 255);
+  max-width: 700px;
+}
+.intro__link {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border: thin solid var(--bs-white);
+  font-size: 18px;
+  border-radius: 3px;
+  transition: background 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.intro__link:hover {
+  background: black;
+  border: 0;
+}
+.blue {
+  background: var(--bs-primary);
+  border: none;
+  margin-right: 10px;
+}
+.blue:hover {
+  background: transparent;
+  border: thin solid var(--bs-white);
+}
+@media (max-width: 1024px) {
+  .intro__title {
+    font-size: 36px;
+    max-width: 700px;
+    margin-top: 80px;
+  }
+  .desc p {
+    font-size: 18px;
+    max-width: 500px;
+  }
+  .intro {
+    height: 500px;
+    justify-content: unset;
+  }
+}
+@media (max-width: 567px) {
+  .intro__title {
+    font-size: 27px;
+  }
+  .desc p {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .intro__link {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}

@@ -1,0 +1,40 @@
+.contact__infoDetails {
+  margin-top: 60px;
+}
+.contact__infoDetails > h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #030f27;
+  line-height: 1.4;
+  max-width: 830px;
+}
+.option {
+  font-size: 26px;
+}
+.contact__infoDetails > p {
+  font-size: 20px;
+  max-width: 530px;
+  margin: 20px auto;
+  color: #8c89a2;
+}
+.nt {
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .contact__infoDetails > h2 {
+    font-size: 25px;
+  }
+
+  .contact__infoDetails > p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 567px) {
+  .contact__infoDetails > h2 {
+    font-size: 23px;
+  }
+
+  .contact__infoDetails .sub__title {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,47 @@
+.icon svg path {
+  stroke: #1292ee;
+}
+.icon svg {
+  width: 50px;
+}
+.service__info {
+  border: 1px solid rgb(231, 231, 231);
+  z-index: 99;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  border-radius: 5px;
+  text-align: center;
+  margin: 30px 0px;
+}
+.service__info:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service__title {
+  font-size: 20px;
+  line-height: 1;
+  color: rgb(3, 15, 39);
+  margin-top: 20px;
+}
+.service__text p {
+  line-height: 1.6;
+  color: rgb(116, 132, 148);
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+.link {
+  margin-top: 20px;
+  color: rgb(18, 146, 238);
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+@media (max-width: 567px) {
+  .service__info {
+    padding: 20px 40px;
+  }
+}

@@ -1,0 +1,122 @@
+.cta__section {
+  position: relative;
+}
+.cta__details {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rt {
+  position: relative;
+}
+.shape {
+  width: 100px;
+}
+.shape img {
+  /* width: 40px; */
+  box-shadow: 0 0 40px 0 rgb(51 51 51 / 10%);
+  border-radius: 35px;
+  display: inline;
+}
+.shape-1 {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+.shape-2 {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+.shape-3 {
+  position: absolute;
+  top: 32%;
+  left: 7%;
+}
+.shape-4 {
+  position: absolute;
+  top: 30%;
+  right: 7%;
+}
+.shape-5 {
+  position: absolute;
+  top: 61%;
+  left: 12%;
+}
+.shape-6 {
+  position: absolute;
+  top: 60%;
+  right: 22%;
+}
+.shape-7 {
+  position: absolute;
+  top: 70%;
+  left: 24%;
+}
+.shape-8 {
+  position: absolute;
+  top: 75%;
+  right: 15%;
+}
+.shape-9 {
+  position: absolute;
+  top: 55%;
+  right: 7%;
+}
+.cta__details .cta__link {
+  padding: 20px 40px;
+  background: var(--bs-primary);
+  border-radius: 6px;
+  margin: 20px 0;
+  display: block;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .shape-3 {
+    left: 2%;
+  }
+
+  .shape-4 {
+    right: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .shape {
+    width: 70px;
+  }
+  .shape-3 {
+    left: 5%;
+    top: 20%;
+  }
+
+  .shape-4 {
+    right: 5%;
+    top: 20%;
+  }
+  .shape-6,
+  .shape-7 {
+    display: none;
+  }
+}
+@media (max-width: 557px) {
+  .shape {
+    width: 55px;
+  }
+  .shape-3,
+  .shape-4 {
+    top: 15%;
+  }
+  .shape-9 {
+    top: 60%;
+  }
+  .shape-5 {
+    left: 8%;
+  }
+  .cta__details .cta__link {
+    padding: 10px 20px;
+  }
+}

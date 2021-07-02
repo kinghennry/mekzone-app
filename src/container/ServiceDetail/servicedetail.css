@@ -1,0 +1,16 @@
+.service__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .service__box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 567px) {
+  .service__box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
